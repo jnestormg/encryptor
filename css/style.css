@@ -80,6 +80,7 @@ body {
     border: 0px;
     height: 40px;
     transition: 1s;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.7);
 }
 
 .botones .boton:hover {
@@ -93,6 +94,7 @@ body {
     background-color: white;
     border: 1px solid gray;
     height: 40px;
+    transition: 1s;
 }
 .botones .copiar:hover {
     background: gray;

@@ -29,7 +29,7 @@ function encriptar(frase) {
 }
 
 function btndesencriptar() {
-    let text = desencriptar(mensaje.value);
+    let text = desencriptar(texto.value);
     console.log(text);
     entrada.value = "";
     mensaje.value = text;
