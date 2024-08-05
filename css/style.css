@@ -1,46 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+main{
+    margin-top: 90px;
+}
 body {
     background: #F3F5FC;
+    margin: 0;
+}
+
+.cabecera{
+    background: black;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .titulo {
-    color:gray;
+    color:rgb(255, 255, 255);
     font-family: "Inter", sans-serif;
+    position: relative;
+    left:20px;
 }
 
 .contenedor {
     width: 90%;
     display: flex;
-    left: 50%;
+    justify-content: center;
+    gap: 10px;
     font-family: "Inter", sans-serif;
-    box-sizing: border-box;
 }
 
 .contenedor .text {
     border:0px;
     border-radius: 5px;
-    height: 400px;
-    width: 60%;
+    height: 300px;
+    width: 500px;
     font-size: 32px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    box-shadow: 5px 5px 5px rgba(200, 200, 200, 0.6);
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.6);
+    resize: vertical;
+    outline: none;
+    padding: 20px;
 }
 
 .contenedor .mensaje {
     border:0px;
     border-radius: 5px;
-    height: 400px;
-    width: 30%;
+    height: 300px;
+    width: 500px;
     background: white !important;
-    box-shadow: 5px 5px 5px rgba(200, 200, 200, 0.6);
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.6);
     font-size: 32px;
+    padding: 20px;
+    resize: vertical;
 }
 .aviso{
     display: flex;
+    justify-content: center;
+    margin: 20px;
 }
 .botones{
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
 }
 .botones .boton {
     width: 200px;
@@ -51,6 +79,7 @@ body {
     background-color:blue;
     border: 0px;
     height: 40px;
+    transition: 1s;
 }
 
 .botones .boton:hover {
@@ -71,8 +100,8 @@ body {
 }
 .pie_pagina{
     font-family: "Inter", sans-serif;
-    position: absolute;
-    left: 50%;
+    display: flex;
+    justify-content: center;
 }
 @media screen and (max-width:800px) and (min-width:600px) {
     .contenedor{
