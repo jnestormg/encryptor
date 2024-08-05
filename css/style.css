@@ -123,16 +123,18 @@ body {
 }
 @media screen and (max-width:600px) and (min-width:200px) {
     .contenedor{
-        display: inline;
-        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;
     }
     .contenedor .mensaje{
-        width: 100%;
-        height: 100px;
-        border-radius: 15px;
+        width: 90%;
+        height: 300px;
     }
     .contenedor .text{
-        width: 100%;
+        width: 90%;
         height: 300px;
     }
     .botones .boton{
